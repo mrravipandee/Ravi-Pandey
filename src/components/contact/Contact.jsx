@@ -1,7 +1,30 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "./Contact.css";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_amiekt7",
+        "template_xs1tvs1",
+        form.current,
+        "FK5nSfT0eTM26auTi"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <section className="contact container section" id="contact">
       <h2 className="section_title">Get In Touch</h2>
@@ -9,15 +32,14 @@ const Contact = () => {
       <div className="contact_container grid">
         <div className="contact_info">
           <h3 className="contact_title">Let's talk about everything!</h3>
-          <p className="contact_details">
-            Don't like forms? Send me an email.
-          </p>
+          <p className="contact_details">Don't like forms? Send me an email.</p>
         </div>
-        <form action="" className="contact_form">
+        <form className="contact_form" ref={form} onSubmit={sendEmail}>
           <div className="contact_form-group">
             <div className="contact_form-div">
               <input
                 type="text"
+                name="user_name"
                 className="contact_form-input"
                 placeholder="Insert your name"
               />
@@ -26,25 +48,19 @@ const Contact = () => {
             <div className="contact_form-div">
               <input
                 type="email"
+                name="user_email"
                 className="contact_form-input"
                 placeholder="Insert your email"
               />
             </div>
           </div>
-          <div className="contact_form-div">
-            <input
-              type="text"
-              className="contact_form-input"
-              placeholder="Insert your subject"
-            />
-          </div>
 
           <div className="contact_form-div contact_form-area">
             <textarea
-              name=""
               id=""
               cols="30"
               rows="10"
+              name="message"
               className="contact_form-input"
               placeholder="Write your message"
             ></textarea>

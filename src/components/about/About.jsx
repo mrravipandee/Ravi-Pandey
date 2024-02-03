@@ -2,6 +2,7 @@ import React from "react";
 import "./About.css";
 import About from "../../assets/avatar-2.svg";
 import AboutBox from "./AboutBox";
+import Resume from "../../assets/RaviPandeyResume2023.pdf";
 
 const Sidebar = () => {
   return (
@@ -22,7 +23,7 @@ const Sidebar = () => {
                 My favorite tech stack includes web development and the exciting
                 world of Web 3.0.
               </p>
-              <a href="" className="btn">
+              <a href={Resume} className="btn">
                 Download Resume
               </a>
             </div>
