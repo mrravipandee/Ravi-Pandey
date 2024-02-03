@@ -14,6 +14,9 @@
 
 .home_img {
     margin-bottom: 1.5rem;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
 }
 
 .home_name {
@@ -26,6 +29,8 @@
     display: flex;
     column-gap: 1.75rem;
     margin: 1.5rem 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .home_social-link {

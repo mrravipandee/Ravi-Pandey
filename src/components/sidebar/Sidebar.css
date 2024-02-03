@@ -14,6 +14,13 @@
     transition: .3s;
 }
 
+.nav_logo {
+    height: 2.5rem;
+    width: 2.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
 .nav_list {
     display: flex;
     flex-direction: column;

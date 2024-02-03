@@ -3,6 +3,10 @@
     column-gap: 1.875rem;
 }
 
+.section_title {
+    margin-bottom: 1rem;
+}
+
 .about_data {
     padding: 1.875rem;
     background-color: var(--container-color);
@@ -65,17 +69,17 @@
 }
 
 .development {
-    width: 90%;
+    width: 60%;
     background-color: rgb(255, 209, 92);
 }
 
-.ui_design {
-    width: 80%;
+.back-end {
+    width: 50%;
     background-color: rgb(255, 76, 96);
 }
 
-.photo {
-    width: 60%;
+.front-end {
+    width: 80%;
     background-color: rgb(108, 108, 299);
 }
 

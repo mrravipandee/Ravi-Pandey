@@ -7,24 +7,24 @@ import ImgServices3 from "../../assets/service-3.svg";
 const data = [
   {
     id: 1,
-    image: ImgServices1,
-    title: "UI/UX design",
+    image: ImgServices3,
+    title: "Front-End Dev",
     description:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
+      "Skilled in React, I create dynamic and responsive web projects with a focus on outstanding user experiences.",
   },
   {
     id: 2,
     image: ImgServices2,
     title: "Web Development",
     description:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
+      "Possessing strong web development skills, I previously worked with PHP but have transitioned to embrace a new tech stack.",
   },
   {
     id: 3,
-    image: ImgServices3,
-    title: "Photography",
+    image: ImgServices1,
+    title: "Innovative Strategist",
     description:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
+      "I possess a keen understanding of market problems, effortlessly aligning my skills to develop impactful and user-friendly solutions for successful product creation.",
   },
 ];
 

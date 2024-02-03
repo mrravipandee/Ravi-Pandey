@@ -1,28 +1,75 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import "./Home.css";
-import Me from "../../assets/avatar-1.svg";
-import HeaderSocials from './HeaderSocials';
-import ScrollDown from './ScrollDown';
-import Shapes from './Shapes';
+import HeaderSocials from "./HeaderSocials";
+import ScrollDown from "./ScrollDown";
+import Shapes from "./Shapes";
 
-const Sidebar = () => {
+const Home = () => {
+  // github get data from github 
+  const [username, setUsername] = useState("mrravipandee");
+  const [userData, setUserData] = useState(null);
+  const [error, setError] = useState(null);
+
+  const apiUrl = `https://api.github.com/users/${username}`;
+
+  const handleInputChange = (e) => {
+    setUsername(e.target.value);
+  };
+
+  const fetchData = () => {
+    fetch(apiUrl, {
+      headers: {
+        Authorization: `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`, // Replace with your actual GitHub API key
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        setUserData(data);
+        setError(null);
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        setUserData(null);
+        setError("User not found");
+      });
+  };
+
+  useEffect(() => {
+    if (username) {
+      fetchData();
+    }
+  }, [username]);
+
+  // Home container code 
   return (
     <section className="home container" id="home">
       <div className="intro">
-        <img src={Me} alt="" className='home_img' />
-        <h1 className="home_name">Ravi Pandey</h1>
-        <span className="home_education">I'm Front-End developer</span>
-        
+        {userData && (
+          <img
+            src={userData.avatar_url}
+            alt="GitHub Profile"
+            className="home_img"
+          />
+        )}
+        <h1 className="home_name">
+          {userData ? userData.name : "Ravi Pandey"}
+        </h1>
+        <span className="home_education">
+          MERN Stack Enthusiast | Tech Learner & Innovator
+        </span>
+
         <HeaderSocials />
 
-        <a href="#contact" className="btn">Hire Me</a>
+        <a href="#contact" className="btn">
+          Hire Me
+        </a>
 
         <ScrollDown />
       </div>
 
       <Shapes />
     </section>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Home;
