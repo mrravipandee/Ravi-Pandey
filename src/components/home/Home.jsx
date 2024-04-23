@@ -3,9 +3,9 @@ import "./Home.css";
 import HeaderSocials from "./HeaderSocials";
 import ScrollDown from "./ScrollDown";
 import Shapes from "./Shapes";
+// require("dotenv").config();
 
 const Home = () => {
-  // github get data from github 
   const [username, setUsername] = useState("mrravipandee");
   const [userData, setUserData] = useState(null);
   const [error, setError] = useState(null);
@@ -19,7 +19,7 @@ const Home = () => {
   const fetchData = () => {
     fetch(apiUrl, {
       headers: {
-        Authorization: `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`, // Replace with your actual GitHub API key
+        Authorization: `${process.env.REACT_APP_API_KEY}`, // Replace with your actual GitHub API key
       },
     })
       .then((response) => response.json())
@@ -55,7 +55,7 @@ const Home = () => {
           {userData ? userData.name : "Ravi Pandey"}
         </h1>
         <span className="home_education">
-          MERN Stack Enthusiast | Tech Learner & Innovator
+          {userData ? userData.bio : "MERN Stack Enthusiast | Tech Learner & Innovator"}
         </span>
 
         <HeaderSocials />

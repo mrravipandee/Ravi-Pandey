@@ -1,6 +1,7 @@
 import React from "react";
 import "./Testimonial.css";
 import Image1 from "../../assets/avatar-1.svg";
+import Image2 from "../../assets/avatar-2.svg";
 import Image3 from "../../assets/avatar-3.svg";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -13,17 +14,25 @@ import 'swiper/css/pagination';
 const data = [
   {
     id: 1,
-    image: Image1,
-    title: "John Doe",
-    subtitle: "Product designer at Dribble",
+    image: Image3,
+    title: "Shweta Bandawane",
+    subtitle: "Engage in network marketing with @forangeinc.",
     comment:
-      "I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good luck! 👍",
+      "Experience unparalleled service with timely delivery, setting a new standard in excellence. Embrace efficiency and reliability with every interaction, making your experience truly remarkable. Good luck! 👍",
   },
   {
     id: 2,
-    image: Image3,
-    title: "John Doe",
-    subtitle: "Product designer at Dribble",
+    image: Image2,
+    title: "Nitesh Ray",
+    subtitle: "Student and Kotlin developer",
+    comment:
+      "I enjoy working with the theme and learn so much. You guys make the process fun and interesting.",
+  },
+  {
+    id: 3,
+    image: Image1,
+    title: "Yash Jejurkar",
+    subtitle: "Software engineer at @Alena",
     comment:
       "I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good luck! 👍",
   },

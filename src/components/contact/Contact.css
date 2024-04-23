@@ -42,6 +42,7 @@
 
 .contact_form-area {
     height: 10.25rem;
+    border-radius: .5rem;
 }
 
 .contact_form-area textarea {

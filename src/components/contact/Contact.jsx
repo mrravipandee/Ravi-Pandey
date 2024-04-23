@@ -1,8 +1,11 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -18,12 +21,21 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          // Clear input fields after successful submission
+          form.current.reset();
+          // Show a success notification
+          notifySuccess();
         },
         (error) => {
           console.log(error.text);
+          // Show an error notification
+          notifyError();
         }
       );
   };
+
+  const notifySuccess = () => toast.success("Message sent successfully!");
+  const notifyError = () => toast.error("Error sending message, please try again.");
 
   return (
     <section className="contact container section" id="contact">
@@ -66,6 +78,7 @@ const Contact = () => {
             ></textarea>
           </div>
           <button className="btn">Send Message</button>
+          <ToastContainer />
         </form>
       </div>
     </section>
