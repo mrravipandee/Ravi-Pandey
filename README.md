@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Ravi Pandey
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my portfolio! This is where I showcase my projects and skills as a web and app developer.
 
-## Available Scripts
+## About Me
 
-In the project directory, you can run:
+I am Ravi Pandey, a passionate developer with expertise in web and app development. I enjoy building interactive and user-friendly experiences using technologies like React, JavaScript, HTML, and CSS.
 
-### `npm start`
+## Projects
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Here are some of the projects I've worked on:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **Emanager - manage events**
+   - Description: Manage the events, like in college or some socity.
+   - Technologies: Java, FireBase
+   - https://github.com/mrravipandee/eManager
 
-### `npm test`
+2. **Mern ToDo List**
+   - Description: I'm learning the MERN stack and building a todo app with tutorials and Google's help. From MongoDB to Express.js, React.js, and Node.js, I'm crafting a seamless frontend and backend. Testing and deploying, I'm mastering MERN's power to organize tasks efficiently.
+   - Technologies: React, Nodejs, Express, MongoDB, Tailwind CSS
+   - https://mern-todo-neon.vercel.app
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. **Quizz App**
+   - Description: About
+I developed a quiz app using React for a college activity to enhance classroom engagement. It offers students a fun way to test their knowledge and enjoy interactive learning. Through this initiative, I aim to foster a collaborative and enjoyable learning environment among my peers.
+   - Technologies: React, JS, Fetch Api
+   - https://quizz-french.vercel.app/
 
-### `npm run build`
+Feel free to explore my repositories for more projects!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Skills
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- React
+- Node
+- Express
+- JavaScript
+- HTML5
+- CSS3
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contact Me
 
-### `npm run eject`
+I'm open to new opportunities and collaborations! If you'd like to work together or just want to say hello, feel free to reach out to me at 'imravipanday@gmail.com'.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Connect with Me
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [LinkedIn](https://www.linkedin.com/in/ravipandey)
+- [GitHub](https://github.com/mrravipandee)
+- [Personal Website/Blog](https://imravidev.vercel.app/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Let's connect and build something amazing together!
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for visiting my portfolio! I look forward to hearing from you.
