@@ -52,7 +52,7 @@
     margin: 0.5rem 0;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
     .resume_container {
         grid-template-columns: 450px;
         justify-content: center;
@@ -64,30 +64,60 @@
     }
 }
 
-@media screen and (max-width : 576px) { 
+@media screen and (max-width: 576px) {
     .resume_container {
         grid-template-columns: 1fr;
     }
 }
 
-@media screen and (max-width : 350px) {  
-    .resume_container {
-        .timeline_item {
-            padding-left: 1.875rem;
-            padding-bottom: 1.875rem;
-        }
+@media screen and (max-width: 350px) {
+    .resume_container .timeline_item {
+        padding-left: 1.875rem;
+        padding-bottom: 1.875rem;
+    }
 
-        .timeline_item::before {
-            left: 0;
-        }
+    .timeline_item::before {
+        left: 0;
+    }
 
-        .timeline .icon-briefcase,
-        .timeline .icon-graduation {
-            left: -9px;
-        }
+    .timeline .icon-briefcase,
+    .timeline .icon-graduation {
+        left: -9px;
+    }
 
-        .timeline_text {
-            text-align: justify;
-        }
+    .timeline_text {
+        text-align: justify;
+    }
+}
+
+/* Dark Mode Styles */
+[data-theme="dark"] {
+    body {
+        background-color: #121212;
+        color: #ffffff;
+    }
+
+    .timeline {
+        background-color: #1e1e1e;
+        color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .timeline_item::before {
+        background-color: #bb86fc;
+    }
+
+    .timeline .icon-briefcase,
+    .timeline .icon-graduation {
+        color: #bb86fc;
+        background-color: #1e1e1e;
+    }
+
+    .timeline_date {
+        color: #8b88b1;
+    }
+
+    .timeline_title {
+        color: #ffffff;
     }
 }

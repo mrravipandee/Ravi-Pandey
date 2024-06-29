@@ -60,7 +60,7 @@
     border-bottom-right-radius: 0;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
     .pricing_container {
         grid-template-columns: repeat(2, 330px);
         justify-content: center;
@@ -72,14 +72,45 @@
     }
 }
 
-@media screen and (max-width : 768px) { 
+@media screen and (max-width: 768px) { 
     .pricing_container {
         grid-template-columns: 310px;
     }
 }
 
-@media screen and (max-width : 350px) {  
+@media screen and (max-width: 350px) {  
     .pricing_container {
         grid-template-columns: 1fr;
+    }
+}
+
+/* Dark Mode Styles */
+[data-theme="dark"] {
+    body {
+        background-color: #121212;
+        color: #ffffff;
+    }
+
+    .pricing_item {
+        background-color: #1e1e1e;
+        color: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .pricing_plan {
+        color: #ffffff;
+    }
+
+    .pricing_title,
+    .pricing_support {
+        color: #b0b0b0;
+    }
+
+    .price {
+        color: #ffd15c;
+    }
+
+    .badge {
+        background-color: #5a5ad5;
     }
 }

@@ -76,3 +76,24 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* Dark Mode Styles */
+[data-theme="dark"] {
+    body {
+        background-color: #121212;
+        color: #ffffff;
+    }
+
+    .contact_form-input {
+        background-color: #1e1e1e;
+        color: #ffffff;
+    }
+
+    .contact_form-input::placeholder {
+        color: #b0b0b0;
+    }
+
+    .contact_form-area {
+        background-color: #1e1e1e;
+    }
+}

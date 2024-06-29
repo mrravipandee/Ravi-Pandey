@@ -1,14 +1,34 @@
 import React, { useState } from "react";
 import "./Sidebar.css";
 import Logo from "../../assets/logo.svg";
+import { FaToggleOff, FaToggleOn } from "react-icons/fa";
 
 const Sidebar = () => {
   const [toggle, showMenu] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+    if (!darkMode) {
+      setDark();
+    } else {
+      setLight();
+    }
+  };
+
+  const setDark = () => {
+    document.querySelector("body").setAttribute('data-theme', 'dark')
+  }
+
+  const setLight = () => {
+    document.querySelector("body").setAttribute('data-theme', 'light')
+  }
+
   return (
     <>
       <aside className={toggle ? "aside show-menu" : "aside"}>
         <a href="#home" className="nav_logo">
-          <img src={Logo} alt="" srcset="" />
+          <img src={Logo} alt="Logo" />
         </a>
 
         <nav className="nav">
@@ -55,6 +75,13 @@ const Sidebar = () => {
                   <i className="icon-bubbles"></i>
                 </a>
               </li>
+
+              <li className="nav_item">
+                <button className="button-dark" onClick={toggleDarkMode}>
+                  {darkMode ? <FaToggleOn /> : <FaToggleOff />}
+                </button>
+              </li>
+              
             </ul>
           </div>
         </nav>
@@ -64,8 +91,10 @@ const Sidebar = () => {
         </div>
       </aside>
 
-      <div className={toggle ? "nav_toggle nav_toggle-open" : "nav_toggle"}
-        onClick={() => showMenu(!toggle)}>
+      <div
+        className={toggle ? "nav_toggle nav_toggle-open" : "nav_toggle"}
+        onClick={() => showMenu(!toggle)}
+      >
         <i className="icon-menu"></i>
       </div>
     </>

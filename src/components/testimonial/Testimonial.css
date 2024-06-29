@@ -92,3 +92,27 @@
         width: 100%;
     }
 }
+
+/* Dark Mode Styles */
+[data-theme="dark"] {
+    body {
+        background-color: #121212;
+        color: #ffffff;
+    }
+
+    .comment {
+        background-color: #1e1e1e;
+    }
+
+    .comment::before {
+        border-bottom-color: #1e1e1e;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #ffd15c !important;
+    }
+
+    .subtitle {
+        color: #bbbbbb;
+    }
+}

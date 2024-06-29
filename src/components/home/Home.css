@@ -162,8 +162,36 @@
     right: 2%;
 }
 
-@media screen and (max-width : 1024px) {
+@media screen and (max-width: 1024px) {
     .home_social-link {
         font-size: 1.125rem;
+    }
+}
+
+/* Dark Mode Styles */
+[data-theme="dark"] {
+    body {
+        background-color: #121212;
+        color: #ffffff;
+    }
+
+    .home_social-link {
+        color: #ffffff;
+    }
+
+    .home_social-link:hover {
+        color: hsl(43, 100%, 68%);
+    }
+
+    .mouse {
+        border: 2px solid #ffffff;
+    }
+
+    .wheel {
+        background-color: #ffffff;
+    }
+
+    .intro {
+        color: #ffffff;
     }
 }

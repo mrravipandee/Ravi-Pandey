@@ -165,3 +165,40 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* Dark Mode Styles */
+[data-theme="dark"] {
+    body {
+        background-color: #121212;
+        color: #ffffff;
+    }
+
+    .about_data {
+        background-color: #1e1e1e;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .about_data::before {
+        border-right: 15px solid #1e1e1e;
+    }
+
+    .skills_bar {
+        background-color: #333333;
+    }
+
+    .development {
+        background-color: #ffca70;
+    }
+
+    .back-end {
+        background-color: #ff4c60;
+    }
+
+    .front-end {
+        background-color: #6c6cff;
+    }
+
+    .about_icon {
+        color: #ffffff;
+    }
+}

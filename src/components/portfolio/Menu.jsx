@@ -25,6 +25,12 @@ const Menu = [
       title: "Delivery App Wireframe",
       category: "Ai&Ml",
     },
+    {
+      id: 4,
+      image: Work1,
+      title: "Delivery App Wireframe",
+      category: "Ai&Ml",
+    }
   ];
 
 export default Menu
